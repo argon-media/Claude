@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="530" viewBox="0 0 1600 530">
+<defs>
+  <linearGradient id="paint" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#df3e43"/>
+    <stop offset="0.38" stop-color="#da2025"/>
+    <stop offset="0.55" stop-color="#d8141a"/>
+    <stop offset="1" stop-color="#8c0d11"/>
+  </linearGradient>
+  <linearGradient id="shoulder" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+    <stop offset="0.5" stop-color="#fff" stop-opacity="0.22"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1c1d20"/>
+    <stop offset="1" stop-color="#050506"/>
+  </linearGradient>
+  <radialGradient id="shadow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#000" stop-opacity="0.45"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="bodyClip"><path d="M 62,428 L 46,336 C 44,288 70,246 130,222 C 220,190 350,168 470,160 L 525,152 C 600,100 670,56 745,42 C 860,22 1010,20 1115,40 C 1205,62 1300,106 1385,130 L 1500,136 L 1522,148 C 1532,190 1532,240 1546,298 L 1556,350 C 1558,385 1548,420 1522,432 L 1356,432 A 125 125 0 1 0 1114,432 L 383,440 A 125 125 0 1 0 141,432 Z"/></clipPath>
+</defs>
+
+<ellipse cx="800" cy="505" rx="780" ry="22" fill="url(#shadow)"/>
+
+<!-- wheel wells -->
+<clipPath id="wellClip"><rect x="0" y="0" width="1600" height="442"/></clipPath>
+<g clip-path="url(#wellClip)" fill="#0a0a0b">
+  <circle cx="262" cy="400" r="125"/>
+  <circle cx="1235" cy="400" r="125"/>
+</g>
+
+<!-- body -->
+<path d="M 62,428 L 46,336 C 44,288 70,246 130,222 C 220,190 350,168 470,160 L 525,152 C 600,100 670,56 745,42 C 860,22 1010,20 1115,40 C 1205,62 1300,106 1385,130 L 1500,136 L 1522,148 C 1532,190 1532,240 1546,298 L 1556,350 C 1558,385 1548,420 1522,432 L 1356,432 A 125 125 0 1 0 1114,432 L 383,440 A 125 125 0 1 0 141,432 Z" fill="url(#paint)"/>
+<g clip-path="url(#bodyClip)">
+  <!-- shoulder highlight -->
+  <path d="M 120,236 C 500,200 1000,176 1530,170 L 1530,250 C 1000,250 500,262 120,282 Z" fill="url(#shoulder)"/>
+  <!-- hood sheen -->
+  <path d="M 110,232 C 220,196 360,176 470,166 L 470,176 C 340,190 220,214 120,250 Z" fill="#fff" opacity="0.18"/>
+  <!-- lower body crease -->
+  <path d="M 380,370 C 700,360 900,356 1120,350" stroke="#970e12" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- carbon roof -->
+  <path d="M 700,56 C 860,26 1010,24 1115,40 C 1205,62 1300,106 1385,130 L 1378,138 C 1290,114 1200,74 1110,52 C 1005,36 860,38 700,64 Z" fill="#141416"/>
+  <!-- side skirt -->
+  <path d="M 383,418 L 1114,414 L 1114,440 L 383,446 Z" fill="#141416"/>
+  <!-- rear diffuser / bumper lower -->
+  <path d="M 1351,405 L 1556,385 L 1556,440 L 1351,440 Z" fill="#141416"/>
+  <!-- front splitter + intake -->
+  <path d="M 40,330 C 60,334 82,340 96,352 L 100,410 L 40,416 Z" fill="#141416"/>
+  <path d="M 40,420 L 150,416 L 150,440 L 40,440 Z" fill="#101012"/>
+</g>
+
+<!-- glass + pillars -->
+<path d="M 548,188 C 615,122 690,74 768,60 C 885,46 1010,48 1108,62 C 1180,84 1232,118 1256,150 L 1215,168 L 568,192 Z" fill="url(#glass)"/>
+<path d="M 862,52 L 895,50 L 878,184 L 846,186 Z" fill="#0b0b0c"/>
+<path d="M 1098,60 L 1112,62 L 1112,172 L 1100,172 Z" fill="#2a2b2e"/>
+<path d="M 548,188 L 568,192 L 1215,168 L 1256,150 L 1260,158 L 1218,176 L 566,200 Z" fill="#0d0d0f"/>
+<path d="M 600,140 C 660,96 720,72 780,64" stroke="#fff" stroke-opacity="0.08" stroke-width="10" fill="none"/>
+
+<!-- panel seams -->
+<g fill="none" stroke="#770b0e" stroke-width="2.2">
+  <path d="M 492,196 C 486,260 488,340 498,418"/>
+  <path d="M 880,186 C 872,260 862,340 858,414"/>
+  <path d="M 1215,176 C 1195,236 1172,276 1150,302"/>
+</g>
+
+<!-- door handles -->
+<rect x="764" y="214" width="74" height="16" rx="8" fill="#ad1015"/>
+<rect x="766" y="216" width="70" height="7" rx="3.5" fill="#e24f53" opacity="0.7"/>
+<rect x="1090" y="198" width="74" height="16" rx="8" fill="#ad1015"/>
+<rect x="1092" y="200" width="70" height="7" rx="3.5" fill="#e24f53" opacity="0.7"/>
+
+<!-- mirror -->
+<path d="M 560,186 L 572,160 L 600,158 L 600,190 Z" fill="#111"/>
+<path d="M 568,152 C 575,140 610,138 626,148 L 628,176 C 612,186 580,188 568,180 Z" fill="url(#paint)"/>
+<path d="M 572,150 C 590,142 612,142 624,150" stroke="#fff" stroke-opacity="0.5" stroke-width="2" fill="none"/>
+
+<!-- fender vent (unbadged) -->
+<path d="M 404,288 L 448,246 L 480,244 L 434,318 Z" fill="#1a1a1c"/>
+<path d="M 420,286 L 452,254" stroke="#3a3a3e" stroke-width="2"/>
+
+<!-- headlight -->
+<path d="M 72,268 C 100,256 140,252 172,258 L 160,284 C 128,292 98,298 76,300 Z" fill="#0f1116"/>
+<path d="M 86,280 C 110,272 136,268 156,268" stroke="#9fb4d8" stroke-width="2.5" fill="none" opacity="0.8"/>
+<!-- side marker -->
+<rect x="128" y="352" width="6" height="56" rx="3" fill="#c98410" opacity="0.85"/>
+
+<!-- tail light -->
+<path d="M 1428,196 L 1510,188 C 1520,196 1522,222 1516,240 L 1468,236 Z" fill="#3a0608"/>
+<path d="M 1440,204 L 1506,198" stroke="#ff3b3b" stroke-width="3" opacity="0.8"/>
+<!-- boot spoiler -->
+<path d="M 1420,134 L 1500,134 L 1524,146 L 1440,146 Z" fill="#141416"/>
+
+<!-- wheels -->
+<circle cx="262" cy="400" r="110" fill="#111"/>
+<circle cx="262" cy="400" r="104" fill="none" stroke="#2a2a2a" stroke-width="4"/>
+<circle cx="262" cy="400" r="82" fill="#1b1b1d"/>
+<circle cx="262" cy="400" r="60" fill="#3a3a3c"/>
+<path d="M 204,370 A 66 66 0 0 0 204,430 L 218,422 A 50 50 0 0 1 218,378 Z" fill="#c9a227"/>
+<g stroke="#2b2b2e" stroke-width="7" stroke-linecap="round"><line x1="258.2" y1="382.4" x2="256.4" y2="320.2"/><line x1="265.8" y1="382.4" x2="267.6" y2="320.2"/><line x1="269.3" y1="383.6" x2="304.4" y2="332.1"/><line x1="275.4" y1="388.0" x2="313.4" y2="338.7"/><line x1="277.6" y1="391.0" x2="336.2" y2="370.0"/><line x1="279.9" y1="398.1" x2="339.6" y2="380.7"/><line x1="279.9" y1="401.9" x2="339.6" y2="419.3"/><line x1="277.6" y1="409.0" x2="336.2" y2="430.0"/><line x1="275.4" y1="412.0" x2="313.4" y2="461.3"/><line x1="269.3" y1="416.4" x2="304.4" y2="467.9"/><line x1="265.8" y1="417.6" x2="267.6" y2="479.8"/><line x1="258.2" y1="417.6" x2="256.4" y2="479.8"/><line x1="254.7" y1="416.4" x2="219.6" y2="467.9"/><line x1="248.6" y1="412.0" x2="210.6" y2="461.3"/><line x1="246.4" y1="409.0" x2="187.8" y2="430.0"/><line x1="244.1" y1="401.9" x2="184.4" y2="419.3"/><line x1="244.1" y1="398.1" x2="184.4" y2="380.7"/><line x1="246.4" y1="391.0" x2="187.8" y2="370.0"/><line x1="248.6" y1="388.0" x2="210.6" y2="338.7"/><line x1="254.7" y1="383.6" x2="219.6" y2="332.1"/></g>
+<circle cx="262" cy="400" r="80" fill="none" stroke="#2f2f32" stroke-width="3"/>
+<circle cx="262" cy="400" r="20" fill="#2b2b2e"/>
+<circle cx="262" cy="400" r="9" fill="#55575c"/>
+<circle cx="1235" cy="400" r="110" fill="#111"/>
+<circle cx="1235" cy="400" r="104" fill="none" stroke="#2a2a2a" stroke-width="4"/>
+<circle cx="1235" cy="400" r="82" fill="#1b1b1d"/>
+<circle cx="1235" cy="400" r="60" fill="#3a3a3c"/>
+<path d="M 1177,370 A 66 66 0 0 0 1177,430 L 1191,422 A 50 50 0 0 1 1191,378 Z" fill="#c9a227"/>
+<g stroke="#2b2b2e" stroke-width="7" stroke-linecap="round"><line x1="1231.2" y1="382.4" x2="1229.4" y2="320.2"/><line x1="1238.8" y1="382.4" x2="1240.6" y2="320.2"/><line x1="1242.3" y1="383.6" x2="1277.4" y2="332.1"/><line x1="1248.4" y1="388.0" x2="1286.4" y2="338.7"/><line x1="1250.6" y1="391.0" x2="1309.2" y2="370.0"/><line x1="1252.9" y1="398.1" x2="1312.6" y2="380.7"/><line x1="1252.9" y1="401.9" x2="1312.6" y2="419.3"/><line x1="1250.6" y1="409.0" x2="1309.2" y2="430.0"/><line x1="1248.4" y1="412.0" x2="1286.4" y2="461.3"/><line x1="1242.3" y1="416.4" x2="1277.4" y2="467.9"/><line x1="1238.8" y1="417.6" x2="1240.6" y2="479.8"/><line x1="1231.2" y1="417.6" x2="1229.4" y2="479.8"/><line x1="1227.7" y1="416.4" x2="1192.6" y2="467.9"/><line x1="1221.6" y1="412.0" x2="1183.6" y2="461.3"/><line x1="1219.4" y1="409.0" x2="1160.8" y2="430.0"/><line x1="1217.1" y1="401.9" x2="1157.4" y2="419.3"/><line x1="1217.1" y1="398.1" x2="1157.4" y2="380.7"/><line x1="1219.4" y1="391.0" x2="1160.8" y2="370.0"/><line x1="1221.6" y1="388.0" x2="1183.6" y2="338.7"/><line x1="1227.7" y1="383.6" x2="1192.6" y2="332.1"/></g>
+<circle cx="1235" cy="400" r="80" fill="none" stroke="#2f2f32" stroke-width="3"/>
+<circle cx="1235" cy="400" r="20" fill="#2b2b2e"/>
+<circle cx="1235" cy="400" r="9" fill="#55575c"/>
+</svg>
